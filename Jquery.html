@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.main * { 
+  display: block;
+  font-size: 20px;
+  position: relative;
+  border: 2px solid rgb(16, 214, 99);
+  color: rgb(22, 107, 177); 
+  padding: 10px;
+  margin: 17px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function fun(){
+$(document).ready(function(){
+  $("p").closest("div").css({ "font-size": "30px", "color": "red", "border": "6px dashed orange"});
+});
+}
+</script>
+</head>
+
+<body class = "main"> body
+  <div> div1
+  <div> div2
+    <ul> ul 
+      <h2> Heading 
+          <p> Paragraph element </p>
+      </h2>
+    </ul>   
+	</div>
+  </div>
+<button onclick = "fun()"> click me </button>
+  </body>
+</html>
+
+ 
